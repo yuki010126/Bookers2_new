@@ -1,0 +1,42 @@
+<div class="container">
+  <div class= "row">
+    <div class="col-sm-12 col-md-8 col-lg-5 px-5 px-sm-0 mx-auto" >
+
+<h2>User info</h2>
+
+<% if @user.errors.any? %>
+  <%= @user.errors.count %>error
+  <% @user.errors.full_messages.each do |message| %>
+    <%= message %>
+  <% end %>
+<% end %>
+
+
+  <%= form_with model:@user, local:true do |f| %>
+
+
+  <label for="inputName">Name</label></br>
+  <%= f.text_field :name, autofocus: true, id:"inputName", placeholder:"名前"%>
+<h4>Image<h4>
+  <%= f.attachment_field :profile_image,  autofocus: true, placeholder: "プロフィール画像" %>
+
+<h3>Introduction</h3>
+  <%= f.text_area :introduction %></br>
+
+  <%= f.submit 'Update User' %>
+<% end %>
+  </div>
+ </div>
+</dib>
+
+
+
+
+
+
+
+
+
+
+
+

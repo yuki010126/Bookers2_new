@@ -1,0 +1,31 @@
+
+   <% if flash[:notice] %>
+     <p id="notice">
+       <%= flash[:notice] %>
+     </p>
+   <% end %>
+
+
+ 
+  
+ <h2>User info</h2>
+  <%= attachment_image_tag user, :profile_image, :fill, 100, 100, format: 'jpeg', fallback: "no_image.jpg" %>
+
+	<table class="table">
+	 <tbody>
+	 <tr></tr>
+	 <tr>
+	 <th>name
+	 <%= user.name %></th>
+  <tr>
+  <th>introduction
+  <%= user.introduction %>
+  </tr>
+ </tbody>
+ </table>
+
+ <div class="row">
+  
+  <%= link_to "プロフィール編集", edit_user_path(user) %>
+ </div>
+
