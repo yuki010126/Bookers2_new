@@ -17,40 +17,40 @@
 
  <div class="form_group">
   <h4>Title</h4>
-  <%= f.text_field :title %>
- </div>  
+   <%= f.text_field :title %>
+ </div>
 
- <div class="form_group">
-  <h4>opinion</h4>
-  <%= f.text_area :body %>
-  <%= f.submit 'CreateBook' %>
-  <% end %>
-</div>
+  <div class="form_group">
+   <h4>opinion</h4>
+    <%= f.text_area :body %>
+    <%= f.submit 'Create Book' %>
+    <% end %>
+ </div>
 </div>
 
 
 <div class="col-md-8 offset-md-1">
  <h1>Users</h1>
  <table class="table table-hover table-inverse">
-   <thead>
+    <thead>
      <tr>
        <th colspan="1"></th>
        <th>image</th>
        <th>name</th>
-    </tr>
-  </thead>
-  </tbody>
-   <% @users.each do |user| %>
-   <tr>
-    <td><%= attachment_image_tag @user, :profile_image, :fill, 40, 40, format: 'jpeg', fallback: "no_image.jpg" ,size:"40x40"%></td>
-   <td><%= user.name %></td>
-    <td><%= link_to 'show', user_path(user) %></td>
-  </tr>  
-  <% end %>
-</tbody>
-</table>
-</div>
-</div>
+     </tr>
+    </thead>
+    </tbody>
+     <% @users.each do |user| %>
+     <tr>
+      <td><%= attachment_image_tag @user, :profile_image, :fill, 40, 40, format: 'jpeg', fallback: "no_image.jpg" ,size:"40x40"%></td>
+      <td><%= user.name %></td>
+      <td><%= link_to 'Show', user_path(user) %></td>
+     </tr>
+    <% end %>
+    </tbody>
+   </table>
+  </div>
+ </div>
 </div>
 
 

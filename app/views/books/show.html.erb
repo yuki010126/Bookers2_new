@@ -16,7 +16,7 @@
    <div class="form_group">
     <h4>opinion</h4>
       <%= f.text_area :body %>
-      <%= f.submit 'CreateBook' %>
+      <%= f.submit 'Create Book' %>
       <% end %>
    </div>
   </div>
@@ -39,8 +39,8 @@
 
          <% if @user == current_user %>
 
-          <td><%= link_to "edit", edit_book_path(@showbook)  %></td>
-          <td><%= link_to "destroy", book_path(@showbook), method: :delete, "data-confirm" => "Are you sure?" %></td>
+          <td><%= link_to "Edit", edit_book_path(@showbook)  %></td>
+          <td><%= link_to "Destroy", book_path(@showbook), method: :delete, "data-confirm" => "Are you sure?" %></td>
 
          <% end %>
 

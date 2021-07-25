@@ -1,31 +1,22 @@
 
-      <main>
-        <p id="notice"></p>
-        <div class="container">
-        <div class="row">
-        <div class="mx-auto col-11 col-sm-10 col-lg-8 col-xl-6">
+  <% if flash[:notice] %>
+     <p id="successfully">
+      <%= flash[:notice] %>
+     </p>
+  <% end %>
+  
+  <div class="container">
+    <div class="row">
+      <div class="mx-auto col-11 col-sm-10 col-lg-8 col-xl-6">
         <h1>
         welcome to
-        <i class="fas fa-book">
-          </i>
+        <i class="fas fa-book"></i>
         <strong>Bookers</strong>
-      !!
+         !!
       </h1>
       <p>
         In
       <i class="fas fa-book">
-
-
-
-   <% if flash[:notice] %>
-     <p id="notice">
-       <%= flash[:notice] %>
-     </p>
-   <% end %>
-
-
-
-
       </i>
       <strong>Bookers</strong>
       ,
@@ -47,7 +38,6 @@
 
 
 
-</body></html>
 
 
 
