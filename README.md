@@ -1,24 +1,18 @@
-# README
+# BOOKERS
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 概要
+rails学習のアウトプット<br />
+ユーザ機能を持ち、読んだ本の感想を投稿するサイト<br />
+機能追加
 
-Things you may want to cover:
+## 機能
+・投稿の一覧表示<br />
+・投稿の詳細表示<br />
+・投稿の削除機能<br />
+・投稿のコメント機能<br />
+・投稿のいいね機能</br>
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## 環境
+・HTML5<br />
+・CSS3<br />
+・Ruby on Rails
